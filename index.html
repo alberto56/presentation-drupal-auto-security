@@ -37,7 +37,86 @@
         </section>
 
         <section>
-          <h2>Docker-based one-click<br/>local development</h2>
+          <h2>A typical Drupal codebase</h2>
+          <ul>
+            <li>Drupal Core</li>
+            <li>Contrib modules</li>
+            <li>Custom code</li>
+            <li>Third-party libraries</li>
+            <li>Generated code such as css from sass</li>
+            <li>Example: Acquia</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Things can get ugly...</h2>
+          <ul>
+            <li>/patches folder</li>
+            <li>No easy way to tell if patches have been applied</li>
+            <li>No easy way to tell if core or contrib have been hacked</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>A separate build process</h2>
+          <ul>
+            <li>drush make</li>
+            <li>Docker</li>
+            <li>composer</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>A separate build process</h2>
+          <ul>
+            <li>drush make</li>
+            <li>Docker</li>
+            <li>composer</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Advantages of Docker</h2>
+          <ul>
+            <li>We all know command-line already</li>
+            <li>Not limited to Drupal</li>
+            <li>Not limited to PHP</li>
+            <li>Deploy anywhere, ony one dependecy required</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Importance of the base image</h2>
+          <ul>
+            <li>The official Drupal image can be out-of-date for days at a time</li>
+            <li>The official Drupal image does not contain Drush</li>
+            <li>Using dcycle/drupal or creating your own image</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Checking for a more up-to-date image at build time</h2>
+        </section>
+
+        <section>
+          <h2>Automating security updates</h2>
+          <ul>
+            <li>Can apply to certain modules only</li>
+            <li>Running automated tests</li>
+            <li>Using dcycle/drupal or creating your own image</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Continuous integration</h2>
+          <ul>
+            <li>Rebuild the image with all latest versions of files</li>
+            <li>Run tests</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Automatic security updates<br/>for Drupal</h2>
           <h3>Albert Albala</h3>
           <p>Dcycle</p>
           <p>@alberto56</p>
