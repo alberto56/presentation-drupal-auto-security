@@ -27,6 +27,8 @@
 
         <section>
           <h2>Automatic security updates<br/>for Drupal</h2>
+          <h3>A discussion (*)</h3>
+          <p>(*) I'll do most of the talking</p>
         </section>
 
         <section>
@@ -34,6 +36,16 @@
           <p>Dcycle</p>
           <p>@alberto56</p>
           <p>This presentation is at<br/> github.com/alberto56/presentation-drupal-auto-security</p>
+        </section>
+
+        <section>
+          <h2>More about you...</h2>
+          <ul>
+            <li>Automated security updates?</li>
+            <li>How much of your work goes into security updates?</li>
+            <li>Docker?</li>
+            <li>Automated testing?</li>
+          </ul>
         </section>
 
         <section>
@@ -67,12 +79,7 @@
         </section>
 
         <section>
-          <h2>A separate build process</h2>
-          <ul>
-            <li>drush make</li>
-            <li>Docker</li>
-            <li>composer</li>
-          </ul>
+          <h2>Demo: Dcycle Drupal 8 Starterkit</h2>
         </section>
 
         <section>
@@ -81,7 +88,7 @@
             <li>We all know command-line already</li>
             <li>Not limited to Drupal</li>
             <li>Not limited to PHP</li>
-            <li>Deploy anywhere, ony one dependecy required</li>
+            <li>Deploy anywhere, only one dependency required</li>
           </ul>
         </section>
 
@@ -95,24 +102,84 @@
         </section>
 
         <section>
-          <h2>Checking for a more up-to-date image at build time</h2>
+          <h2>Demo</h2>
+          <ul>
+            <li>Rebuild your base image outside of your project</li>
+            <li>Steward Health Care base image</li>
+            <li>Steward Health Care project</li>
+          </ul>
         </section>
 
         <section>
-          <h2>Automating security updates</h2>
+          <h2>Checking for a more up-to-date image at build time</h2>
           <ul>
-            <li>Can apply to certain modules only</li>
-            <li>Running automated tests</li>
-            <li>Using dcycle/drupal or creating your own image</li>
+            <li>Easier to update than not to</li>
+            <li>./scripts/deploy.sh</li>
           </ul>
+        </section>
+
+        <section>
+          <h2>Types of issues I've encountered</h2>
+          <ul>
+            <li>Changes to Drupal core causing errors</li>
+            <li>New dependency on existing module</li>
+            <li>Change in module does not cause image to fail, but causes issue on website</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>End-to-end testing</h2>
+          <ul>
+            <li>A lot fewer end-to-end tests than unit tests</li>
+            <li>Manual testing is error-prone</li>
+            <li>Start with simple smoke tests</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Demo: end-to-end testing</h2>
         </section>
 
         <section>
           <h2>Continuous integration</h2>
           <ul>
-            <li>Rebuild the image with all latest versions of files</li>
+            <li>Rebuild the image with latest versions of code</li>
             <li>Run tests</li>
           </ul>
+        </section>
+
+        <section>
+          <h2>Demo: continuous integration</h2>
+        </section>
+
+        <section>
+          <h2>Critical security issues</h2>
+          <ul>
+            <li>Just a regular update</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Deploying to non-Docker production hosts</h2>
+          <ul>
+            <li>A build script</li>
+            <li>rsync</li>
+            <li>in continuous integration</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Conclusion</h2>
+          <ul>
+            <li>Docker</li>
+            <li>Continuous integration</li>
+            <li>A build step</li>
+            <li>Automated tests</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Questions?</h2>
         </section>
 
         <section>
