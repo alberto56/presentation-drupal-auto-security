@@ -3,7 +3,7 @@ backend:
   repo: alberto56/presentation-drupal-auto-security
   branch: master
   base_url: https://suresh-issue-82.dcycleproject.org
-  auth_endpoint: /auth/github/repo/6946e3fa7c6e2b059bec66bd
+  auth_endpoint: /auth/github/repo/694f515918f56cc35826653b
 media_folder: static/uploads
 public_folder: /uploads
 collections:
